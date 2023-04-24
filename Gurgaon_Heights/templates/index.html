@@ -3,5 +3,106 @@
 {% load static %}
 {% block content %}
 
-<h1>Hello Adssquad Team</h1>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="/static/materialize/css/materialize.min.css" media="screen,projection" />
+<link href="/static/css/bootstrap.min.css" rel="stylesheet" />
+<link href="/static/css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
+<link href="/static/css/flexslider.css" rel="stylesheet" /> 
+<link rel="stylesheet" type="text/css" href="/static/css/zoomslider.css" />
+<link href="/static/css/style.css" rel="stylesheet" />
+ 
+<!-- section start -->
+<section id="banner"> 
+	<!-- Slider -->
+	<div id="demo-1" data-zs-src='["/static/img/photos/img1.jpg", "/static/img/photos/img2.jpg", "/static/img/photos/img3.jpg"]' data-zs-overlay="dots">
+		<div class="demo-inner-content">
+			<h1><span>HillSide</span></h1><br/>
+			<p>World class Real estate Venture</p>
+		</div>
+	</div>
+	<!-- end slider --> 
+	</section>  
+<!-- section end -->
+
+<!-- section start -->
+<section class="projects">
+    <div class="container">
+     <div class="row">
+        <div class="col-md-12">
+            <div class="aligncenter"><h2 class="aligncenter">Our Featured Projects</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident, <br/>doloribus omnis minus ovident, doloribus omnis minus temporibus perferendis nesciunt..</div>
+            <br/>
+        </div>
+    </div>
+
+<div class="row service-v1 margin-bottom-40">
+        <div class="col-md-4 md-margin-bottom-40">
+                <div class="card small">
+                    <div class="card-image">
+                         <img class="img-responsive" src="/static/img/service1.jpg" alt="">   
+                    </div>
+                    <div class="card-content"> 
+                        <p>
+                            <span class="price">$4.00 Lacs - 8.28 Lacs</span>
+                            <h4>Orange County</h4>
+                            <h5>Paris</h5>
+                            <a href="details.html" class="btn btn-details">Details</a>
+                        </p>
+                    </div>
+                </div>        
+        </div>
+           <div class="col-md-4 md-margin-bottom-40">
+                <div class="card small">
+                    <div class="card-image">
+                         <img class="img-responsive" src="/static/img/service2.jpg" alt="">   
+                    </div>
+                    <div class="card-content">
+                       <p>
+                            <span class="price">$4.00 Lacs - 8.28 Lacs</span>
+                            <h4>Orange County</h4>
+                            <h5>Paris</h5>
+                            <a href="details.html" class="btn btn-details">Details</a>
+                        </p>
+                    </div>
+                </div>        
+        </div>
+           <div class="col-md-4 md-margin-bottom-40">
+                <div class="card small">
+                    <div class="card-image">
+                         <img class="img-responsive" src="/static/img/service3.jpg" alt="">  
+                    </div>
+                    <div class="card-content">
+                       <p>
+                            <span class="price">$4.00 Lacs - 8.28 Lacs</span>
+                            <h4>Orange County</h4>
+                            <h5>Paris</h5>
+                            <a href="details.html" class="btn btn-details">Details</a>
+                        </p>
+                    </div>
+                </div>        
+        </div> 
+    </div>
+    </div>
+    </section>
+<!-- section end -->
+
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/static/js/jquery.js"></script>
+<script src="/static/js/jquery.easing.1.3.js"></script>
+<script src="/static/materialize/js/materialize.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/js/jquery.fancybox.pack.js"></script>
+<script src="/static/js/jquery.fancybox-media.js"></script>  
+<script src="/static/js/jquery.flexslider.js"></script>
+<script src="/static/js/animate.js"></script>
+<!-- Vendor Scripts -->
+<script src="/static/js/modernizr.custom.js"></script>
+<script src="/static/js/jquery.zoomslider.min.js"></script>
+<script src="/static/js/jquery.isotope.min.js"></script>
+<script src="/static/js/jquery.magnific-popup.min.js"></script>
+<script src="/static/js/animate.js"></script> 
+<script src="/static/js/custom.js"></script>
+
+{% include 'footer.html' %}
 {% endblock %}
