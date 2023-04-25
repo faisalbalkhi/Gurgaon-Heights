@@ -4,3 +4,19 @@ from django.shortcuts import render
 
 def index(request):
     return render(request, 'index.html')
+
+
+def residential(request):
+    return render(request, 'residential.html')
+
+
+def commercial(request):
+    return render(request, 'commercial.html')
+
+
+def contact(request):
+    return render(request, 'contact.html')
+
+
+def about(request):
+    return render(request, 'about.html')

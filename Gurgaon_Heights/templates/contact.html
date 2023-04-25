@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" type="text/css" href="/static/css/contact.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<section class="div-height">
+    <div class="headline">
+        <h1>
+            <span class="comm-headline">
+                <span>Contact Us</span>
+            </span>
+        </h1>
+
+    </div>
+</section>
+
+
+<section>
+    <div class="contact-info section-padding contact-page-section-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="contactDetails">
+                        <i class="fa fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p> 1800 3002 9797</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="contactDetails">
+                        <i class="fa fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>info@eliteproinfra.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="contactDetails">
+                        <i class="fa fa-globe"></i>
+                        <h4>Website</h4>
+                        <p> www.eliteproinfra.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <div class="contactDetails">
+                        <i class="fa fa-map-marker"></i>
+                        <h4>Office</h4>
+                        <p>3rd and 7th floor, Golf View Corporate Tower, 1, Golf Course Rd, Sector 42, Gurugram, Haryana
+                            122002</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="contact-section mapview formcontent">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <iframe src="" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-6  col-md-12">
+                    <div class="section-title content">
+                        <h2>Write to us</h2>
+                    </div>
+                    <form class="contact_form myForm" name="permissions" action="" method="post"
+                        enctype="multipart/form-data" novalidate="">
+                        <input type="hidden" name="_token" value=""> <input type="hidden" name="redirect_url"
+                            value="contact-us">
+                        <div class="form-control-wrap">
+                            <div id="message" class="alert alert-danger alert-dismissible fade"></div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="fname" placeholder="Your Name*" name="name"
+                                    required="">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email_address"
+                                    placeholder="Write Your Email Address*" name="email" required="">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="8" name="message" id="comment"
+                                    placeholder="Your Message" required=""></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn-show">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% include 'footer.html' %}
+{% endblock %}
