@@ -20,3 +20,11 @@ def contact(request):
 
 def about(request):
     return render(request, 'about.html')
+
+
+def residential_Single_Listing(request):
+    return render(request, 'residentialSingleListing.html')
+
+
+def commercial_Single_Listing(request):
+    return render(request, 'commercialSingleListing.html')
