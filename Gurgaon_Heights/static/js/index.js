@@ -28,7 +28,7 @@ var close = document.getElementsByClassName("close")[0];
 // Open modal once the page is loaded
 setTimeout(function() {
   mpopup.style.display = "block";
-}, 2000);
+}, 3000);
 
 // Close modal once close element is clicked
 close.onclick = function() {
