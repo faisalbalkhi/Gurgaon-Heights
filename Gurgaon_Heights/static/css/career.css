@@ -13,3 +13,15 @@
 .comm-headline {
     color: #fff !important;
 }
+
+.headingdetails {
+    text-align: center !important;
+    margin-top: 12rem;
+    height: 15rem;
+}
+.headingdetails h5{
+    
+ 
+    font-weight: 700;
+  
+}
