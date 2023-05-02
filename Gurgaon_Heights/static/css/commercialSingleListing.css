@@ -359,28 +359,8 @@ input[type="checkbox"] {
     position: relative;
 }
 
-.row.map-down-pad {
-    padding-top: 20px;
-}
 
-.map-down-right {
-    float: left;
-    width: 10%;
-}
-
-.map-down-left {
-    float: left;
-    width: 90%;
-}
-.map-down-left h4 {
-    font-size: 15px;
-    color: #444;
-    /* padding-bottom: 15px;
-    border-bottom: 1px solid #ccc; */
-}
-
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991px) {
     .list-alldetails-section .amenitiesshift {
         display: flex !important;
         flex-wrap: wrap !important;
@@ -388,7 +368,6 @@ input[type="checkbox"] {
     }
 
 }
-
 @media screen and (max-width: 768px) {
     .alldetails-amenities-list {
         width: 20rem !important;
@@ -397,18 +376,16 @@ input[type="checkbox"] {
 }
 
 @media screen and (max-width: 360px) {
-    .btn {
+    .btn{
         width: 14rem !important;
     }
 
 }
-
 @media screen and (max-width: 335px) {
     .col-md-3.about-prop img {
         width: 11rem !important;
     }
-
-    .btn {
+    .btn{
         width: 12rem !important;
         margin-left: -3rem;
     }
