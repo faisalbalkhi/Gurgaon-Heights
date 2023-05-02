@@ -64,7 +64,6 @@
                     <ul class="nav navbar-nav">
                         <li class="HillSide"><a class="waves-effect waves-dark" href="{% url 'index' %}">Home</a></li> 
                         <li><a class="waves-effect waves-dark" href="{% url 'about' %}">About Us</a></li>
-                        <li><a class="waves-effect waves-dark" href="services.html">Services</a></li>
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">Properties<b class="caret"></b></a>
                             <ul class="dropdown-menu">
@@ -73,20 +72,9 @@
                             </ul>
                         </li> 
 
-						 <li class="dropdown">
-                        <a href="#" data-toggle="dropdown" class="dropdown-toggle waves-effect waves-dark">Resources<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a class="waves-effect waves-dark" href="#">BLOG
-                                </a></li>
-                            <li><a class="waves-effect waves-dark" href="#">NEWS & EVENT
-                                </a></li>
-                            <li><a class="waves-effect waves-dark" href="#">LOCATION
-                                </a></li> 
-                            <li><a class="waves-effect waves-dark" href="#">SOCIAL CONNECT</a></li>
-                        </ul>
-                    </li> 
+                        <li><a class="waves-effect waves-dark" href="blog.html">Blog</a></li>
 
-                        <li><a class="waves-effect waves-dark" href="career.html">Career</a></li>
+                        <li><a class="waves-effect waves-dark" href="{% url 'career' %}">Career</a></li>
                        
                         <li><a class="waves-effect waves-dark" href="{% url 'contact' %}">Contact Us</a></li>
                     </ul>
