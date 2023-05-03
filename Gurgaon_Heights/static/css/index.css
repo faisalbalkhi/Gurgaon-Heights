@@ -322,5 +322,48 @@ color: black;
 
 
 
-
-
+@media screen and (max-width:992px) {
+    .w3-black{
+        width: 31vw !important;
+    }
+}
+@media screen and (max-width:880px) {
+    .w3-black{
+        width: 41vw !important;
+    }
+    .container1{
+        flex-direction: column;
+    }
+    .container1 img {
+        width: 100%;
+    }
+    .whyus_img {
+        width: 100% !important;
+        padding: 30px !important;
+    }
+    .connectUs{
+        height: auto;
+        padding: 1rem;
+    }
+    .connect_cards {
+        display: flex;
+        margin: auto;
+        width: 47vh;
+        row-gap: 1rem;
+        /* justify-content: center; */
+        margin-top: 3rem;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:660px) {
+    .w3-black{
+        width: 51vw !important;
+    }
+    
+}
+@media screen and (max-width:540px) {
+    .w3-black{
+        width: 50% !important;
+        flex-direction: column;
+    }
+}  
