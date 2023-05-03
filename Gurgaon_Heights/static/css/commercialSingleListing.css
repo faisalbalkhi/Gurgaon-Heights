@@ -391,3 +391,86 @@ input[type="checkbox"] {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+.carousel-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .carousel-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    display: none;
+  }
+  
+  .carousel-item.active {
+    display: block;
+  }
+  
+  .carousel-thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .carousel-thumbnail {
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .carousel-thumbnail.active {
+    border: 2px solid black;
+  }
+  
+  .carousel-prev,
+  .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .carousel-prev {
+    left: 0;
+  }
+  
+  .carousel-next {
+    right: 0;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .carousel-container {
+      max-width: 600px;
+    }
+  }
+  
+  @media screen and (max-width: 479px) {
+    .carousel-container {
+      max-width: 300px;
+    }
+    
+    .carousel-thumbnail {
+      margin: 0 2.5px;
+    }
+  }
