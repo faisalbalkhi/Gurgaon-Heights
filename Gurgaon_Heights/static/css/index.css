@@ -143,7 +143,7 @@ textarea {
 }
 
 .intext{
-    margin-top: 200px !important;
+    margin-top: 25vh !important;
 }
 .headtxt{
     color: #fff;
@@ -355,10 +355,22 @@ color: black;
         margin-top: 3rem;
         flex-direction: column;
     }
+    .city_select{
+        width: 15% !important;
+    }
+}
+@media screen and (max-width: 735px) {
+    .intext {
+        margin-top: 20vh !important;
+    }
+    
 }
 @media screen and (max-width:660px) {
     .w3-black{
         width: 51vw !important;
+    }
+    .city_select{
+        width: 20% !important;
     }
     
 }
@@ -368,3 +380,43 @@ color: black;
         flex-direction: column;
     }
 }  
+
+@media screen and (max-width: 473px) {
+    .intext {
+        margin-top: 20vh !important;
+    }
+    .headtxt{
+        font-size: 45px;
+    line-height: 50px;
+    }
+}
+@media screen and (max-width:484px) {
+    .city_select{
+        width: 25% !important;
+    }
+}
+@media screen and (max-width:414px) {
+    .navbar-brand{
+        padding: 0px;
+    }
+}
+@media screen and (max-width:384px) {
+    .city_select{
+        width: 30% !important;
+    }
+    .navbar-brand{
+        font-size: 20px !important;
+        margin-top: 15px !important;
+    }
+}
+@media screen and (max-width:345px) {
+    .navbar-brand{
+        font-size: 17px !important;
+    }
+}
+@media screen and (max-width:305px) {
+    .navbar-brand{
+        font-size: 15px !important;
+    }
+}
+
