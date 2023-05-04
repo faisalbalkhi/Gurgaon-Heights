@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-
 {% load static %}
 {% block content %}
 
@@ -22,13 +21,12 @@
 
 <section class="shiftcomm">
     <div class="row service-v1 margin-bottom-40">
-        
+        {% for each in commercial %}
           <div class="col-md-4 md-margin-bottom-40">
-            
             <div class="card small">
                 <div class="card small-item">
                     <div class="card-image">
-                        <img class="img-responsive" src="/static/img/service3.jpg" alt="">
+                        <img class="img-responsive" src="{{ each.image.url }}" alt="">
                     </div>
                     <ul class="feature-text">
                         <li class="feature-text-item1">
@@ -42,15 +40,15 @@
                     </ul>
                 </div>
                 <div class="card-content">
-                    <h4>Orange County</h4>
+                    <h4>{{ each.title }}</h4>
                     <div class="property-location">
                
-                        <p><span class="top-map-marker"><i class="fa fa-map-marker"></i></span> Sector 65, Gurugram</p>
+                        <p><span class="top-map-marker"><i class="fa fa-map-marker"></i></span> {{each.location}}</p>
                     </div>
 
                     <ul class="property-feature">
                         <li> <i class="material-icons"></i>
-                            <span>250 - 1000 Sq. Ft.</span>
+                            <span>{{each.area_min}} - {{each.area_max}}</span>
                         </li>
 
                     </ul>
@@ -66,7 +64,7 @@
                         </div>
                         <a class="trend-right float-right">
                             <div class="trend-open">
-                                <p><span class="per_sale">starts from</span>/₹60 lakh to 2 CR*</p>
+                                <p><span class="per_sale">starts from</span>/₹{{each.price}}CR*</p>
                             </div>
                         </a>
                     </div>
@@ -74,7 +72,7 @@
             </div>
             
         </div>
-      
+        {% endfor %}
     </div>
 
 </section>

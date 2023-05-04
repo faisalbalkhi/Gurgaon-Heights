@@ -8,16 +8,18 @@ def index(request):
 
 def residential(request):
     residential = Property.objects.filter(property_type='R')
-    commercial = Property.objects.filter(property_type='C')
-    print(residential)
+
     return render(request, 'residential.html',{
        'residential':residential ,
-       'commercial':commercial
     })
 
 
 def commercial(request):
-    return render(request, 'commercial.html')
+    commercial = Property.objects.filter(property_type='C')
+
+    return render(request, 'commercial.html',{
+        'commercial': commercial,
+    })
 
 
 def contact(request):
@@ -30,6 +32,7 @@ def about(request):
 
 def residential_Single_Listing(request,slug):
     residential_single_list = Property.objects.get(slug=slug)
+    
     return render(request, 'residential-Single-Listing.html',{
         'residential_single_list':residential_single_list
     })
