@@ -322,6 +322,7 @@ color: black;
 
 
 
+
 @media screen and (max-width:992px) {
     .w3-black{
         width: 31vw !important;
@@ -379,6 +380,7 @@ color: black;
         flex-direction: column;
     }
 }  
+
 @media screen and (max-width: 473px) {
     .intext {
         margin-top: 20vh !important;
@@ -417,3 +419,4 @@ color: black;
         font-size: 15px !important;
     }
 }
+
