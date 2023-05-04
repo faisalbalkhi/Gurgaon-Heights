@@ -32,3 +32,7 @@ def residential_Single_Listing(request):
 
 def commercial_Single_Listing(request):
     return render(request, 'commercialSingleListing.html')
+
+
+def properties(request):
+    return render(request, 'properties.html')
