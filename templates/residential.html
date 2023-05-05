@@ -22,12 +22,14 @@
 
 <section class="shiftcomm">
     <div class="row service-v1 margin-bottom-40">
-        {% for each in residential %}
+        {% for each in property %}
         <div class="col-md-4 md-margin-bottom-40">
             <div class="card small">
                 <div class="card small-item">
                     <div class="card-image">
-                        <a href="{% url 'residential_Single_Listing' each.slug %}"> <img  class="img-responsive" src="{{ each.image.url }}" alt=""></a>
+                        
+                        <a href="{% url 'residential_Single_Listing' each.slug %}"> <img  class="img-responsive" src="{% for each2 in each.image.all|slice:':1' %}{{each2.image.url }}{% endfor %}" alt=""></a>
+                       
                      </div>
                     <ul class="feature-text">
                         <li class="feature-text-item1">
@@ -56,11 +58,9 @@
                     <div class="trending-bottom">
                         <div class="trend-left float-left">
                             <ul class="product-rating">
-                                <li><i class="fa fa-star checked"></i>{{each.rating}}</li>
+                                {% for star in each.get_rating_stars %}
                                 <li><i class="fa fa-star checked"></i></li>
-                                <li><i class="fa fa-star checked"></i></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
+                                {% endfor %}
                             </ul>
                         </div>
                         <a class="trend-right float-right">

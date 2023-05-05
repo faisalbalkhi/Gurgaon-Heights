@@ -3,6 +3,10 @@ from django_extensions.db.fields import AutoSlugField
 
 
 # Create your models here.
+class Image(models.Model):
+    image = models.ImageField(upload_to='Multiple_image')
+
+    
 
 class Amenities(models.Model):
     name = models.CharField(max_length=100)
@@ -26,11 +30,17 @@ class Property(models.Model):
     price_max = models.IntegerField()
     psf = models.IntegerField("Per Sq. Ft")
     status = models.CharField(max_length=200)
-    image = models.ImageField(upload_to='Residential_image')
+    image = models.ManyToManyField(Image, related_name='Residential_image')
     rating = models.IntegerField()
+    title_overview = models.CharField(max_length=200)
+    description_overview = models. TextField()
     slug = AutoSlugField(populate_from=['title'], null=True, blank=True)
 
 
     def __str__(self):
         return self.title
     
+    def get_rating_stars(self):
+        return list(range(self.rating))
+
+

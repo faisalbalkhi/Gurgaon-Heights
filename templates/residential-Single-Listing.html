@@ -15,31 +15,16 @@
                             <div class="carousel-container">
                                 <div class="carousel-main">
                                   <div class="carousel-item active">
-                                    <img class="d-block w-100" src="{{residential_single_list.image.url}}" alt="First slide">
+                                    <img class="d-block w-100" src="{% for each2 in property.image.all|slice:':1' %}{{each2.image.url }}{% endfor %}"  alt="First slide">
                                   </div>
-                                  <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{residential_single_list.image.url}}" alt="Second slide">
-                                  </div>
-                                  <div class="carousel-item">
-                                    <img class="d-block w-100" src="{{residential_single_list.image.url}}" alt="Third slide">
-                                  </div>
+                                 
                                 </div>
                                 <div class="carousel-thumbnails">
+                                {% for each2 in property.image.all %} 
                                   <div class="carousel-thumbnail active">
-                                    <img src="{{residential_single_list.image.url}}" alt="Slide 1 Thumbnail">
+                                    <img src="{{each2.image.url }}" alt="Slide 1 Thumbnail">
                                   </div>
-                                  <div class="carousel-thumbnail">
-                                    <img src="{{residential_single_list.image.url}}" alt="Slide 2 Thumbnail">
-                                  </div>
-                                  <div class="carousel-thumbnail">
-                                    <img src="{{residential_single_list.image.url}}" alt="Slide 3 Thumbnail">
-                                  </div>
-                                  <div class="carousel-thumbnail">
-                                    <img src="{{residential_single_list.image.url}}" alt="Slide 4 Thumbnail">
-                                  </div>
-                                  <div class="carousel-thumbnail">
-                                    <img src="{{residential_single_list.image.url}}" alt="Slide 5 Thumbnail">
-                                  </div>
+                                  {% endfor %}
                                 </div>
                             </div>
                             <!--/.Carousel Wrapper-->
@@ -169,19 +154,8 @@
                                             <div class="overview-content">
                                                 <p class="mb-10">
                                                 </p>
-                                                <p style="text-align: center;"><strong>M3M Capital - A Residential
-                                                        Enclave Encircled with Every Convenience</strong></p>
-                                                <p>The modern and efficient new housing development, M3M Capital is
-                                                    constructed by one of the nation's acclaimed builders, M3M Group,
-                                                    and is situated in the heart of Gurugram. It is strategically
-                                                    located in Sector 113, the most recognized area of Gurugram. This
-                                                    project strives to provide luxury to everyone with its superbly
-                                                    designed 2.5 and 3.5 BHK luxury golf residences. You will have quick
-                                                    access to the bustling neighborhoods and the best amenities brought
-                                                    right to your doorstep with your new residence at M3M Capital 113.
-                                                    The M3M Capital Dwarka Expressway covers a verdant central green
-                                                    space and offers a magnificent set of 100+ contemporary amenities in
-                                                    addition to enormous parking areas on stilts.</p>
+                                                <p style="text-align: center;"><strong>{{residential_single_list.title_overview}}</strong></p>
+                                                <p>{{residential_single_list.description_overview}}</p>
                                                 <p><strong>Unmatched Specifications of M3M Capital</strong></p>
                                                 <p>The property offers apartments with 0.5 extra room edge that can be
                                                     used as per dweller's customization i.e, as a library or gym, or
