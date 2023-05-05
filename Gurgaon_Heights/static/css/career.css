@@ -20,8 +20,14 @@
     height: 15rem;
 }
 .headingdetails h5{
-    
+
  
     font-weight: 700;
   
+}
+
+@media screen and (max-width: 460px) {
+    .headline {
+        margin-left: 4rem !important;
+    }
 }
