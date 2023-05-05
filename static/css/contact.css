@@ -89,7 +89,6 @@
     text-transform: uppercase;
     margin-top: 1rem;
 }
-}
 
 form {
     display: block;
@@ -126,12 +125,6 @@ form {
     padding-left: 25px;
     text-align: center;
 }
-
-@media screen and (max-width: 1200px) {
-    .col-lg-3 .col-md-4 {
-      display: grid;
-      grid-template-columns: repeat(2, 2fr);
-      row-gap: 2rem;
-    }
-
+.gridshift{
+    row-gap: 2rem !important;
 }
