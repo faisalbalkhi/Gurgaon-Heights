@@ -36,21 +36,21 @@
 
             <div class="col-lg-4 col-sm-12 col-xl-4 col-md-12">
                 <div class="alldetails-1c">
-                    <h1>{{residential_single_list.title}}</h1>
+                    <h1>{{property.title}}</h1>
                 </div>
                 <div class="alldetails-1d">
-                    <span class="top-map-marker"><i class="fa fa-map-marker"></i></span> <span>{{residential_single_list.location}}
+                    <span class="top-map-marker"><i class="fa fa-map-marker"></i></span> <span>{{property.location}}
                     </span>
                 </div>
                 <div class="alldetails-hr"></div>
                 <div class="alldetails-price-top">
                     <div class="alldetails-price-top-1">
                         <span class="alldetails-price-currency">₹</span>
-                        <span class="alldetails-min-price">{{residential_single_list.area_min}} to {{residential_single_list.area_max}} CR*</span>
+                        <span class="alldetails-min-price">{{property.area_min}} to {{property.area_max}} CR*</span>
                     </div>
-                    <div class="alldetails-onwards-price">₹ {{residential_single_list.psf}} Per Sq. Ft Onwards</div>
+                    <div class="alldetails-onwards-price">₹ {{property.psf}} Per Sq. Ft Onwards</div>
                     <div class="alldetails-rating-sec">
-                        <span class="fa fa-star checked">{{residential_single_list.rating}}</span>
+                        <span class="fa fa-star checked">{{property.rating}}</span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -61,7 +61,7 @@
                             </a>
                         </span>
                     </div>
-                    <div class="alldetails-status">Status: <span>{{residential_single_list.status}}</span></div>
+                    <div class="alldetails-status">Status: <span>{{property.status}}</span></div>
 
                     <!-- Project-Size-1 -->
                     <div class="alldetails-project-size">
@@ -76,7 +76,7 @@
                                 <tr>
                                     <td>
                                         <ul class="alldetails-project-size-list">
-                                            <li style="color: #000;">1600 to 2300 Sq. Ft.</li>
+                                            <li style="color: #000;">{{property.area_min}} to {{property.area_max}} Sq. Ft.</li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -116,7 +116,7 @@
                                 <tr>
                                     <td>
                                         <ul class="alldetails-project-size-list">
-                                            <li style="color: #000;">{{residential_single_list.title}}</li>
+                                            <li style="color: #000;">{{property.title}}</li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -154,8 +154,8 @@
                                             <div class="overview-content">
                                                 <p class="mb-10">
                                                 </p>
-                                                <p style="text-align: center;"><strong>{{residential_single_list.title_overview}}</strong></p>
-                                                <p>{{residential_single_list.description_overview}}</p>
+                                                <p style="text-align: center;"><strong>{{property.title_overview}}</strong></p>
+                                                <p>{{property.description_overview}}</p>
                                                 <p><strong>Unmatched Specifications of M3M Capital</strong></p>
                                                 <p>The property offers apartments with 0.5 extra room edge that can be
                                                     used as per dweller's customization i.e, as a library or gym, or
