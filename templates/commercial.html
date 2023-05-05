@@ -21,12 +21,12 @@
 
 <section class="shiftcomm">
     <div class="row service-v1 margin-bottom-40">
-        {% for each in commercial %}
+        {% for each in property %}
           <div class="col-md-4 md-margin-bottom-40">
             <div class="card small">
                 <div class="card small-item">
                     <div class="card-image">
-                        <img class="img-responsive" src="{{ each.image.url }}" alt="">
+                        <a href="{% url 'commercial_Single_Listing' each.slug %}"> <img  class="img-responsive" src="{% for each2 in each.image.all|slice:':1' %}{{each2.image.url }}{% endfor %}" alt=""></a>
                     </div>
                     <ul class="feature-text">
                         <li class="feature-text-item1">
