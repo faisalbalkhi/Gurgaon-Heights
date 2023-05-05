@@ -1,3 +1,4 @@
+
 from django.urls import path
 
 from . import views
@@ -11,4 +12,6 @@ urlpatterns = [
     path('career/', views.career, name='career'),
     path('residential-Single-Listing/', views.residential_Single_Listing, name='residential_Single_Listing'),
     path('commercial-Single-Listing/', views.commercial_Single_Listing, name='commercial_Single_Listing'),
+    path('properties/', views.properties, name='properties'),
+
 ]
