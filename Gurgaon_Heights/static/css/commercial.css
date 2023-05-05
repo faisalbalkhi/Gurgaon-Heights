@@ -2,11 +2,15 @@
     background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(https://www.eliteproinfra.com/front/images/sub-header/commercial.jpg);
     height: 45rem;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100% !important;
+    object-fit: fill !important;
 }
 
 .headline {
     font-size: 3rem;
-    margin-left: 15rem;
+    margin-left: 15vw;
     padding-top: 20rem;
 }
 
@@ -18,7 +22,7 @@
     margin-top: 6rem;
 }
 
-.row {
+.listing_div {
     margin-left: 15rem;
     margin-right: 15rem;
     font-size: 16px;
@@ -55,4 +59,28 @@
     display: inline-block;
     line-height: 1;
     cursor: text;
+}
+@media screen and (max-width:585px) {
+    .listing_div{
+    margin-left: 10rem !important;
+    margin-right: 10rem !important;
+    }
+}
+@media screen and (max-width:485px) {
+    .listing_div{
+    margin-left: 6rem !important;
+    margin-right: 6rem !important;
+    }
+}
+@media screen and (max-width:365px) {
+    .listing_div{
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+    }
+}
+@media screen and (max-width:315px) {
+    .listing_div{
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    }
 }

@@ -48,7 +48,14 @@
         <div class="modalCont2">
             <img src="https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg?cs=srgb&dl=pexels-pixabay-302769.jpg&fm=jpg" alt="" class="modal_img" height="405px" width="405px">
             <div class="modal-form">
-               
+                <!-- <h6>Fill details  Below</h6> -->
+                <form>      
+                    <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+                    <input name="email" type="text" class="feedback-input" placeholder="Email" />
+                    <input name="mobileno" type="number" class="feedback-input" placeholder="MobileNumber" />
+                    <textarea name="text" class="feedback-input" placeholder="Drop your message...."></textarea>
+                    <input type="submit" value="SUBMIT"/>
+                  </form>
                   
             </div>
         </div>
@@ -62,42 +69,19 @@
         data-zs-src='["/static/img/photos/img1.jpg", "/static/img/photos/img2.jpg", "/static/img/photos/img3.jpg"]'
         data-zs-overlay="dots">
         <div class="demo-inner">
-            <div id="DIV_1">
-                <div id="DIV_2">
-                    <h1 id="H1_3">
-                        Experience Luxury With<br id="BR_4" /> <span id="SPAN_5">GURGAON HEIGHTS</span>
-                    </h1>
-                    <form action="" method="get" id="FORM_9">
-                        <div id="DIV_10">
-                            <div id="DIV_11">
-                                <i id="I_12"></i>
-                                <div id="DIV_13">
-
-                                    <select id="SELECT_14" name="city">
-
-                                        <option value="1" id="OPTION_15">
-                                            Delhi
-                                        </option>
-                                        <option value="2" id="OPTION_16">
-                                            Gurugram
-                                        </option>
-                                    </select>
-                                </div>
-                            </div>
-                            <ul id="UL_17">
-                                <li id="LI_18">
-                                    <input type="text" name="q" id="INPUT_19"
-                                        placeholder=" Find Project, Builder or Location" />
-                                </li>
-                            </ul>
-                            <input name="search-new" type="text" id="INPUT_20" />
-                            <button type="text" id="BUTTON_21">
-                                <i id="I_22"></i>
-                            </button>
-                        </div>
-                    </form>
-
-                </div>
+            <div class="intext">
+                <h2 class="aligncenter">Experience luxury with</h2>
+                <h1 class="headtxt aligncenter">Gurgaon Heights</h1>
+                <form action="submit" method="post" class="header_search_form aligncenter">
+                    <select class="city_select" name="" id="" style="display: block;">
+                        <option value="">Gurgaon</option>
+                        <option value="">Delhi</option>
+                    </select>
+                    <input class="search_input" type="text" placeholder="Search property or location">
+                    <button class="search_btn">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
             </div>
         </div>
     </div>
@@ -125,8 +109,10 @@
         </div>
 
         <div id="London" class="w3-container w3-border city">
+            
             <div class="row service-v1 margin-bottom-40">
                 <div class="col-md-4 md-margin-bottom-40">
+                    
                     <div class="card small">
                         <div class="card-image">
                             <img class="img-responsive" src="/static/img/service3.jpg" alt="">
@@ -281,12 +267,13 @@
 </section>
 
 <section class="why_us">
-    <div class="row">
+    <div class="row" style="margin-bottom: 0px;">
         <div class="col-md-12">
-            <div class="aligncenter">
-                <h2 class="aligncenter">Why choose us?</h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+            <div class="aligncenter" style="padding : 0px 30px;">
+                <h2 class="aligncenter">Why choose us?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
                 quae porro consequatur aliquam, incidunt eius magni provident, <br />doloribus omnis minus ovident,
-                doloribus omnis minus temporibus perferendis nesciunt..
+                doloribus omnis minus temporibus perferendis nesciunt..</p>
             </div>
             <br />
         </div>

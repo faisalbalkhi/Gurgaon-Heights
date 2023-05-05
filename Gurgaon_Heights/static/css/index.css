@@ -76,550 +76,128 @@
     display: flex;
 }
 
-  
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/* body { background:rgb(30,30,40); } */
+/* form { max-width:420px; margin:50px auto; } */
+
+.feedback-input {
+  color:black !important;
+  font-family: Helvetica, Arial, sans-serif !important;
+  font-weight:500 !important;
+  font-size: 18px !important;
+  border-radius: 5px !important;
+  line-height: 22px !important;
+  background-color: transparent !important;
+  border:1px solid black !important;
+  transition: all 0.3s !important;
+  padding: 13px !important;
+  margin-bottom: 15px !important;
+  width:100% !important;
+  box-sizing: border-box !important;
+  outline:0 !important;
+}
+
+.feedback-input:focus { border:2px solid #CC4949 !important; }
+
+textarea {
+  height: 100px !important;
+  line-height: 150% !important;
+  resize:vertical !important;
+  color: black !important;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
+  width: 35% !important;
+  background:#CC6666 !important;
+  border-radius:5px !important;
+  border:0 !important;
+  cursor:pointer !important;
+  color:white !important;
+  font-size:15px !important;
+  padding-top:10px !important;
+  padding-bottom:10px !important;
+  transition: all 0.3s !important;
+  margin-top:-4px !important;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+[type="submit"]:hover { background:#CC4949 !important; }
+
+.modal-form form{
+    width: 90% !important;
+    margin-top: 35px !important;
+}
 
 /* modal end */
-/* Carousel inner content */
-  #DIV_1 {
-      block-size: 134px;
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-start-color: rgb(255, 255, 255);
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-start-color: rgb(255, 255, 255);
-      bottom: 168.587px;
-      box-sizing: border-box;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      height: 134px;
-      inline-size: 1496px;
-      inset-block-end: 168.587px;
-      inset-block-start: 302.587px;
-      inset-inline-end: -748px;
-      inset-inline-start: 748px;
-      left: 748px;
-      padding-inline-end: 110px;
-      padding-inline-start: 110px;
-      perspective-origin: 748px 67px;
-      position: absolute;
-      right: -748px;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      top: 302.587px;
-      transform: matrix(1, 0, 0, 1, -748, -67.2);
-      transform-origin: 748px 67px;
-      width: 1496px;
-      z-index: 2;
-      border: 0px none rgb(255, 255, 255);
-      font: 16px / 18.4px "Visby CF", sans-serif;
-      outline: rgb(255, 255, 255) none 0px;
-      padding: 0px 110px;
-  }/*#DIV_1*/
-  
-  
-  #DIV_2 {
-      block-size: 134px;
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-start-color: rgb(255, 255, 255);
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-start-color: rgb(255, 255, 255);
-      box-sizing: border-box;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      height: 134px;
-      inline-size: 1276px;
-      max-inline-size: 100%;
-      max-width: 100%;
-      perspective-origin: 638px 67px;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      transform-origin: 638px 67px;
-      width: 1276px;
-      border: 0px none rgb(255, 255, 255);
-      font: 16px / 18.4px "Visby CF", sans-serif;
-      outline: rgb(255, 255, 255) none 0px;
-  }/*#DIV_2*/
-  
-  #H1_3 {
-      block-size: 104px;
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-start-color: rgb(255, 255, 255);
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-start-color: rgb(255, 255, 255);
-      box-sizing: border-box;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      height: 104px;
-      inline-size: 1276px;
-      letter-spacing: 5.25px;
-      margin-block-end: 30px;
-      margin-block-start: 0px;
-      max-inline-size: 100%;
-      max-width: 100%;
-      perspective-origin: 638px 52px;
-      text-align: center;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      text-transform: uppercase;
-      transform-origin: 638px 52px;
-      width: 1276px;
-      border: 0px none rgb(255, 255, 255);
-      font: 700 21px / 32px Cinzel, sans-serif;
-      margin: 0px 0px 30px;
-      outline: rgb(255, 255, 255) none 0px;
-  }/*#H1_3*/
-  
-  #BR_4 {
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-start-color: rgb(255, 255, 255);
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-start-color: rgb(255, 255, 255);
-      box-sizing: border-box;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      letter-spacing: 5.25px;
-      perspective-origin: 0px 0px;
-      text-align: center;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      text-transform: uppercase;
-      transform-origin: 0px 0px;
-      border: 0px none rgb(255, 255, 255);
-      font: 700 21px / 32px Cinzel, sans-serif;
-      outline: rgb(255, 255, 255) none 0px;
-      
-  }/*#BR_4*/
-  
-  #SPAN_5 {
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-start-color: rgb(255, 255, 255);
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-start-color: rgb(255, 255, 255);
-      box-sizing: border-box;
-      caret-color: rgb(255, 255, 255);
-      color: #e91e63;
-      column-rule-color: rgb(255, 255, 255);
-      letter-spacing: 9px;
-      perspective-origin: 0px 0px;
-      text-align: center;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-shadow: rgb(0, 0, 0) 3px 1px 0px;
-      text-size-adjust: 100%;
-      text-transform: uppercase;
-      transform-origin: 0px 0px;
-      border: 0px none rgb(255, 255, 255);
-      font: 700 68px / 72px Cinzel, sans-serif;
-      outline: rgb(255, 255, 255) none 0px;
-  }/*#SPAN_5*/
-  
+
+/* carousal text top */
+.intext h2{
+    color: white !important;
+    font-size: 2rem;
+    letter-spacing: 5.25px;
+    /* text-transform: capitalize; */
+
+}
+
+.intext{
+    margin-top: 25vh !important;
+}
+.headtxt{
+    color: #fff;
+    text-shadow: 3px 1px #000;
+    letter-spacing: 9px;
+    font-size: 65px;
+    line-height: 72px;
+    margin-top: 10px !important;
+    font-weight: 500 !important;
+}
+.header_search_form{
+    display: flex;
+    margin: auto ;
+    justify-content: center;
+}
+
+.search_btn{
+    
+    background: transparent;
+    color: white;
+    border: 1px solid #fff;
+    height: 39.5px;
+    border-left: none !important;
+
+}
+.search_input{
+    text-decoration: none !important;
+    width: 48% !important;
+    height: 30px !important;
+    padding: 4px 7px;
+    /* background: no-repeat; */
+    /* font-family: 'Visby CF Demi'; */
+    color: #fff;
+    /* position: absolute; */
+    /* top: 0; */
+    border: 1px solid #fff !important;
+    border-right: none !important;
+}
+
+.city_select{
+    background: transparent;
+    width: 10% !important;
+    height: 39.5px !important;
+    color: white;
+    border: 1px solid #fff !important;
+}
+
+.city_select option{
+color: black;
+/* border-radius: 0 !important; */
+}
+/* carousel text top end */
 
 
-  
-  #FORM_9 {
-      block-size: 0px;
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-start-color: rgb(255, 255, 255);
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-start-color: rgb(255, 255, 255);
-      box-sizing: border-box;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      height: 0px;
-      inline-size: 1276px;
-      margin-block-end: 0px;
-      perspective-origin: 638px 0px;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      transform-origin: 638px 0px;
-      width: 1276px;
-      border: 0px none rgb(255, 255, 255);
-      font: 16px / 18.4px "Visby CF", sans-serif;
-      margin: 0px;
-      outline: rgb(255, 255, 255) none 0px;
-      margin: 0px 250px;
-  }/*#FORM_9*/
-  
-  #DIV_10 {
-      block-size: 0px;
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-start-color: rgb(255, 255, 255);
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-start-color: rgb(255, 255, 255);
-      bottom: 0px;
-      box-sizing: border-box;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      height: 0px;
-      inline-size: 816.638px;
-      inset-block-end: 0px;
-      inset-block-start: 0px;
-      inset-inline-end: 0px;
-      inset-inline-start: 0px;
-      left: 0px;
-      perspective-origin: 408.312px 0px;
-      position: relative;
-      right: 0px;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      top: 0px;
-      transform-origin: 408.319px 0px;
-      width: 816.638px;
-      border: 0px none rgb(255, 255, 255);
-      font: 16px / 18.4px "Visby CF", sans-serif;
-      outline: rgb(255, 255, 255) none 0px;
-  }/*#DIV_10*/
-  
-  #DIV_13 {
-      block-size: 40px;
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-start-color: rgb(255, 255, 255);
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-start-color: rgb(255, 255, 255);
-      bottom: 0px;
-      box-sizing: border-box;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      cursor: pointer;
-      display: inline-block;
-      height: 40px;
-      inline-size: 122.488px;
-      inset-block-end: 0px;
-      inset-block-start: 0px;
-      inset-inline-end: 0px;
-      inset-inline-start: 0px;
-      left: 0px;
-      perspective-origin: 61.2375px 20px;
-      position: relative;
-      right: 0px;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      top: 0px;
-      transform-origin: 61.2438px 20px;
-      width: 122.488px;
-      border: 0px none rgb(255, 255, 255);
-      font: 16px / 18.4px "Visby CF", sans-serif;
-      outline: rgb(255, 255, 255) none 0px;
-      overflow: hidden;
-  }/*#DIV_13*/
-  
-  #SELECT_14 {
-      background-position: 0px 0px;
-      block-size: 40px;
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-end-width: 1.6px;
-      border-block-start-color: rgb(255, 255, 255);
-      border-block-start-width: 1.6px;
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-end-style: none;
-      border-inline-end-width: 0px;
-      border-inline-start-color: rgb(255, 255, 255);
-      border-inline-start-width: 1.6px;
-      bottom: 0px;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      display: block;
-      height: 40px;
-      inline-size: 122.488px;
-      inset-block-end: 0px;
-      inset-block-start: 0px;
-      inset-inline-end: 0px;
-      inset-inline-start: 0px;
-      left: 0px;
-      padding-inline-start: 24px;
-      perspective-origin: 61.2375px 20px;
-      position: absolute;
-      right: 0px;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      top: 0px;
-      transform-origin: 61.2438px 20px;
-      width: 122.488px;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
-      border-top: 1.6px solid rgb(255, 255, 255);
-      border-right: 0px none rgb(255, 255, 255);
-      border-bottom: 1.6px solid rgb(255, 255, 255);
-      border-left: 1.6px solid rgb(255, 255, 255);
-      font: 600 14px "Visby CF", sans-serif;
-      outline: rgb(255, 255, 255) none 0px;
-      padding: 0px 0px 0px 24px;
-      transition: all 0.2s ease-in 0s;
-  }/*#SELECT_14*/
-  
-  
-  #OPTION_15, #OPTION_16 {
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-end-style: solid;
-      border-block-end-width: 0.8px;
-      border-block-start-color: rgb(255, 255, 255);
-      border-block-start-style: solid;
-      border-block-start-width: 0.8px;
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-end-style: solid;
-      border-inline-end-width: 0.8px;
-      border-inline-start-color: rgb(255, 255, 255);
-      border-inline-start-style: solid;
-      border-inline-start-width: 0.8px;
-      box-sizing: border-box;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      cursor: default;
-      min-block-size: 16.8px;
-      min-height: 16.8px;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      background: rgb(180, 145, 65) none repeat scroll 0% 0% / auto padding-box border-box;
-      border: 0.8px solid rgb(255, 255, 255);
-      font: 14px "Visby CF", sans-serif;
-      outline: rgb(255, 255, 255) none 0px;
-  }/*#OPTION_15, #OPTION_16*/
-  
-  #UL_17 {
-      background-position: 0px 0px;
-      block-size: 40px;
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-end-style: solid;
-      border-block-end-width: 1.6px;
-      border-block-start-color: rgb(255, 255, 255);
-      border-block-start-style: solid;
-      border-block-start-width: 1.6px;
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-end-style: solid;
-      border-inline-end-width: 1.6px;
-      border-inline-start-color: rgb(255, 255, 255);
-      border-inline-start-style: solid;
-      border-inline-start-width: 1.6px;
-      bottom: -50px;
-      box-sizing: border-box;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      height: 40px;
-      inline-size: 694.138px;
-      inset-block-end: -50px;
-      inset-block-start: 0px;
-      inset-inline-end: 0.0125px;
-      inset-inline-start: 122.488px;
-      left: 122.488px;
-      margin-block-end: 10px;
-      margin-block-start: 0px;
-      perspective-origin: 347.062px 20px;
-      position: absolute;
-      right: 0.0125px;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      top: 0px;
-      transform-origin: 347.069px 20px;
-      width: 694.138px;
-      background: rgba(0, 0, 0, 0) none repeat scroll 0px 0px / auto padding-box border-box;
-      border: 1.6px solid rgb(255, 255, 255);
-      font: 16px / 18.4px "Visby CF", sans-serif;
-      margin: 0px 0px 10px;
-      outline: rgb(255, 255, 255) none 0px;
-  }/*#UL_17*/
-  
-  #LI_18 {
-      block-size: 0px;
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-start-color: rgb(255, 255, 255);
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-start-color: rgb(255, 255, 255);
-      box-sizing: border-box;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      height: 0px;
-      inline-size: 650.938px;
-      perspective-origin: 325.462px 0px;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      transform-origin: 325.469px 0px;
-      width: 650.938px;
-      border: 0px none rgb(255, 255, 255);
-      font: 16px / 18.4px "Visby CF", sans-serif;
-      list-style: outside none none;
-      outline: rgb(255, 255, 255) none 0px;
-  }/*#LI_18*/
-  
-  #INPUT_19 {
-      block-size: 40px;
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-end-style: none;
-      border-block-end-width: 0px;
-      border-block-start-color: rgb(255, 255, 255);
-      border-block-start-style: none;
-      border-block-start-width: 0px;
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-end-style: none;
-      border-inline-end-width: 0px;
-      border-inline-start-color: rgb(255, 255, 255);
-      border-inline-start-style: none;
-      border-inline-start-width: 0px;
-      bottom: -3.2px;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      display: block;
-      height: 40px;
-      inline-size: 690.938px;
-      inset-block-end: -3.2px;
-      inset-block-start: 0px;
-      inset-inline-end: -40px;
-      inset-inline-start: 40px;
-      left: 40px;
-      letter-spacing: 2px;
-      padding-block-end: 4px;
-      padding-block-start: 4px;
-      padding-inline-end: 7px;
-      padding-inline-start: 7px;
-      perspective-origin: 345.462px 20px;
-      position: absolute;
-      right: -40px;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      top: 0px;
-      transform-origin: 345.469px 20px;
-      width: 690.938px;
-      background: rgba(0, 0, 0, 0) none no-repeat scroll 0% 0% / auto padding-box border-box;
-      border: 0px none rgb(255, 255, 255);
-      font: 700 13px / 14.95px "Visby CF Demi";
-      list-style: outside none none;
-      outline: rgb(255, 255, 255) none 0px;
-      padding: 4px 7px;
-  }/*#INPUT_19*/
-  
-  #INPUT_20 {
-      block-size: 40px;
-      border-block-end-color: rgb(102, 102, 102);
-      border-block-end-style: solid;
-      border-block-end-width: 0.8px;
-      border-block-start-color: rgb(255, 255, 255);
-      border-block-start-style: none;
-      border-block-start-width: 0px;
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-end-style: none;
-      border-inline-end-width: 0px;
-      border-inline-start-color: rgb(255, 255, 255);
-      border-inline-start-style: none;
-      border-inline-start-width: 0px;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      display: none;
-      height: 40px;
-      inline-size: 100%;
-      inset-block-start: 0px;
-      letter-spacing: 2px;
-      padding-block-end: 4px;
-      padding-block-start: 4px;
-      padding-inline-end: 7px;
-      padding-inline-start: 7px;
-      position: absolute;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      top: 0px;
-      width: 100%;
-      background: rgba(0, 0, 0, 0) none no-repeat scroll 0% 0% / auto padding-box border-box;
-      border-top: 0px none rgb(255, 255, 255);
-      border-right: 0px none rgb(255, 255, 255);
-      border-bottom: 0.8px solid rgb(102, 102, 102);
-      border-left: 0px none rgb(255, 255, 255);
-      font: 700 13px / 14.95px "Visby CF Demi";
-      outline: rgb(255, 255, 255) none 0px;
-      padding: 4px 7px;
-  }/*#INPUT_20*/
-  
-  
-  #BUTTON_21 {
-      appearance: button;
-      block-size: 22.7px;
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-end-style: none;
-      border-block-end-width: 0px;
-      border-block-start-color: rgb(255, 255, 255);
-      border-block-start-style: none;
-      border-block-start-width: 0px;
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-end-style: none;
-      border-inline-end-width: 0px;
-      border-inline-start-color: rgb(255, 255, 255);
-      border-inline-start-style: none;
-      border-inline-start-width: 0px;
-      bottom: -28.7px;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      display: block;
-      height: 22.7px;
-      inline-size: 28.725px;
-      inset-block-end: -28.7px;
-      inset-block-start: 6px;
-      inset-inline-end: 12px;
-      inset-inline-start: 775.912px;
-      left: 775.912px;
-      perspective-origin: 14.3625px 11.35px;
-      position: absolute;
-      right: 12px;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      top: 6px;
-      transform-origin: 14.3625px 11.35px;
-      width: 28.725px;
-      z-index: 999;
-      background: rgba(0, 0, 0, 0) none no-repeat scroll 0% 0% / auto padding-box border-box;
-      border: 0px none rgb(255, 255, 255);
-      font: 18px / 20.7px "Visby CF", sans-serif;
-      outline: rgb(255, 255, 255) none 0px;
-  }/*#BUTTON_21*/
-  
-  #I_22 {
-      block-size: 18px;
-      border-block-end-color: rgb(255, 255, 255);
-      border-block-start-color: rgb(255, 255, 255);
-      border-inline-end-color: rgb(255, 255, 255);
-      border-inline-start-color: rgb(255, 255, 255);
-      box-sizing: border-box;
-      caret-color: rgb(255, 255, 255);
-      color: rgb(255, 255, 255);
-      column-rule-color: rgb(255, 255, 255);
-      cursor: default;
-      display: inline-block;
-      height: 18px;
-      inline-size: 16.725px;
-      perspective-origin: 8.3625px 9px;
-      text-align: center;
-      text-decoration: none solid rgb(255, 255, 255);
-      text-emphasis-color: rgb(255, 255, 255);
-      text-size-adjust: 100%;
-      transform-origin: 8.3625px 9px;
-      width: 16.725px;
-      border: 0px none rgb(255, 255, 255);
-      font: 18px / 18px FontAwesome;
-      outline: rgb(255, 255, 255) none 0px;
-  }/*#I_22*/
-  
   /* About us code */
 .container1{
     display: flex;
@@ -741,3 +319,104 @@
 .soc_icon i{
     font-size: 45px;
 }
+
+
+
+
+@media screen and (max-width:992px) {
+    .w3-black{
+        width: 31vw !important;
+    }
+}
+@media screen and (max-width:880px) {
+    .w3-black{
+        width: 41vw !important;
+    }
+    .container1{
+        flex-direction: column;
+    }
+    .container1 img {
+        width: 100%;
+    }
+    .whyus_img {
+        width: 100% !important;
+        padding: 30px !important;
+    }
+    .connectUs{
+        height: auto;
+        padding: 1rem;
+    }
+    .connect_cards {
+        display: flex;
+        margin: auto;
+        width: 47vh;
+        row-gap: 1rem;
+        /* justify-content: center; */
+        margin-top: 3rem;
+        flex-direction: column;
+    }
+    .city_select{
+        width: 15% !important;
+    }
+}
+@media screen and (max-width: 735px) {
+    .intext {
+        margin-top: 20vh !important;
+    }
+    
+}
+@media screen and (max-width:660px) {
+    .w3-black{
+        width: 51vw !important;
+    }
+    .city_select{
+        width: 20% !important;
+    }
+    
+}
+@media screen and (max-width:540px) {
+    .w3-black{
+        width: 50% !important;
+        flex-direction: column;
+    }
+}  
+
+@media screen and (max-width: 473px) {
+    .intext {
+        margin-top: 20vh !important;
+    }
+    .headtxt{
+        font-size: 45px;
+    line-height: 50px;
+    }
+}
+@media screen and (max-width:484px) {
+    .city_select{
+        width: 25% !important;
+    }
+}
+@media screen and (max-width:414px) {
+    .navbar-brand{
+        padding: 0px;
+    }
+}
+@media screen and (max-width:384px) {
+    .city_select{
+        width: 30% !important;
+    }
+    .navbar-brand{
+        font-size: 20px !important;
+        margin-top: 15px !important;
+    }
+}
+@media screen and (max-width:345px) {
+    .navbar-brand{
+        font-size: 17px !important;
+    }
+}
+@media screen and (max-width:305px) {
+    .navbar-brand{
+        font-size: 15px !important;
+    }
+}
+
